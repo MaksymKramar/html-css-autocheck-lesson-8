@@ -1,0 +1,61 @@
+/* Задание 1 SVG Свойство fill и наследование цвета с помощью currentColor */
+div {
+  color: green;
+  background-color: #eee;
+  font-size: 24px;
+}
+
+.icon {
+  fill: currentColor;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+div:hover {
+  color: orangered;
+}
+
+/* Задание 2 SVG Использование CSS переменных в спрайте */
+.link {
+  text-decoration: none;
+  color: green;
+  font-family: sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.link-icon {
+  --icon-color: currentColor;
+  margin-right: 0.5rem;
+}
+.link:hover {
+  color: orangered;
+}
+
+/* Задание 3 SVG Смена фона для sprite иконок */
+:root {
+  --primay: burlywood;
+  --accent: cadetblue;
+}
+.items {
+  list-style: none;
+  display: flex;
+}
+.item {
+  margin: 0.25rem;
+}
+.link {
+  color: var(--accent);
+  display: block;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--primay);
+}
+.link-icon {
+  --icon-color: currentColor;
+}
+.link:hover {
+  background-color: var(--accent);
+  color: var(--primay);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Задание 1 SVG Свойство fill и наследование цвета с помощью currentColor -->
+    <div>
+        Иконки svg:
+        <svg class="icon" width="24" height="24">
+            <use href="sprite.svg#icon-pen">
+            </use>
+        </svg>
+        <svg class="icon" width="24" height="24">
+            <use href="sprite.svg#icon-search">
+            </use>
+        </svg>
+        <svg class="icon" width="24" height="24">
+            <use href="sprite.svg#icon-delete">
+            </use>
+        </svg>
+    </div>
+
+    <!-- Задание 2 SVG Использование CSS переменных в спрайте -->
+    <a href="#" class="link">
+        <svg class="link-icon" width="24" height="24">
+            <use href="sprite-with-fill.svg#icon-pen">
+            </use>
+        </svg>
+        Оставьте отзыв
+    </a>
+    <!-- Задание 3 SVG Смена фона для sprite иконок -->
+    <ul class="items">
+        <li class="item">
+            <a href="#" class="link">
+                <svg class="link-icon" width="24" height="24">
+                    <use href="sprite-with-fill.svg#icon-delete"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="item">
+            <a href="#" class="link">
+                <svg class="link-icon" width="24" height="24">
+                    <use href="sprite-with-fill.svg#icon-pen"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
